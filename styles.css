@@ -1,3 +1,83 @@
+
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* -----Side Nav------ */
+.nav-bar {
+  background-color: #af9ef4;
+  width: 20%;
+  padding: 1%;
+}
+
+.user-image {
+  height: 50px;
+  width: 50px;
+}
+
+.sidebar-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 4%;
+}
+
+.community-sidebar-container,
+.main-sidebar-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.community-sidebar,
+.main-sidebar {
+  list-style: none;
+  margin-top: 10%;
+}
+
+.user-options-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+
+/* ------top nav------ */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+}
+
+.menu-icons {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: solid rgb(207, 207, 207) 1px;
+}
+
+.search-box {
+  height: 62px;
+  width: 70vw;
+}
+
+/* ------tabs------ */
 .artist-tabs {
   display: flex;
   flex-wrap: wrap;
