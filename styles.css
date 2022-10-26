@@ -1,0 +1,25 @@
+.artist-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  width: 75%;
+}
+
+.artist-tabs input[type='radio'] {
+  display: none;
+}
+
+.artist-tabs label {
+  padding: 10px;
+  background: #b1b1b2ea;
+  cursor: pointer;
+}
+
+.artist-tabs input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+.artist-tabs [type='radio']:checked + label {
+  background: #a397d2;
+}
