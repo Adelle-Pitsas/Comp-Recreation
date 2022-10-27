@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
-    <section class="nav-bar">
+    <aside class="nav-bar">
       <img class="user-image" src="../Comp-Recreation/assets/user-picture.png" alt="user's image">
       <p class="user-name">Adelle Pitsas</p>
       <hr>
@@ -44,16 +44,16 @@
       </section>
       <hr>
       <section class="user-options-sidebar-container">User Options
-        <input type="radio" id="userSideBar" class="user-sidebar find-user-link" checked="checked"/>
+        <input type="checkbox" id="userSideBar" class="user-sidebar checkbox" checked="checked"/>
         <label for="userSideVar">User</label>
-        <input type="radio" id="adminSideBar" class="artist-admin-sidebar find-pattern-link"/>
+        <input type="checkbox" id="adminSideBar" class="artist-admin-sidebar checkbox"/>
         <label for="adminSideVar">Artist Admin</label>
-        <input type="radio" id="editorSideBar" class="editor-sidebar find-artist-link"/>
+        <input type="checkbox" id="editorSideBar" class="editor-sidebar checkbox"/>
         <label for="editorSideVar">Editor</label>
-        <input type="radio" id="sellerSideBar" class="seller-sidebar post-pattern-link"/>
+        <input type="checkbox" id="sellerSideBar" class="seller-sidebar checkbox"/>
         <label for="sellerSideVar">Seller</label>
       </section>
-    </section>
+    </aside>
     <section class="main-content">
       <nav class="menu">
         <div class="menu-left">
@@ -77,7 +77,7 @@
         </div>
       </nav>
       <h1 class="shop-title">Drea Renee Knits</h1>
-      <span>
+      <span class="shop-title-info">
         <img>
         <p class="location">location</p>
         <p class="add-to-favorites">Add to favorites</p>
@@ -113,61 +113,104 @@
         <label for="artist-archive">Archive</label>
       </div>
       <section class="artist-container">
-      <section class="artist-data-container">
-        <div class="infographic-1">
-          <img>
-          <p>label for infographic-1</p>
-        </div>
-        <div class="infographic-2">
-          <img>
-          <p>label for infographic-2</p>
-        </div>
-      </section>
-      <section class="more-artistinfo-container">
-        <article class="featured-pattern">
-          <h3 class="header1 article-header">Featured Pattern</h3>
-          <p class="description1 article-description"></p>
-          <h3 class="header2 article-header">Pattern Name</h3>
-          <p class="description1 article-description">Mackworth</p>
-          <h3 class="header3 article-header">Author</h3>
-          <p class="description1 article-description">Andrea Mowry</p>
-          <h3 class="header4 article-header">Description</h3>
-          <p class="description1 article-description">This sweater was a little gift to myself last Spring. I designed it as I went and it filled me right up! I hope it fills you up too and that when you wear it, you get a big ol dose of self love! Knit from the top down seamlessly, you can try it on as you go to get the right fit for you!</p>
-          <h3 class="header5 article-header">Yarn Type</h3>
-          <p class="description1 article-description">Light Fingering</p>
-          <h3 class="header6 article-header">Needle/hook size</h3>
-          <p class="description1 article-description">US 5 - 3.75 mm</p>
-          <h3 class="header7 article-header">Yardage</h3>
-          <p class="description1 article-description">1579 = 3488 yards (1444 - 3189 m</p>
-          <h3 class="header8 article-header">Cost</h3>
-          <p class="description1 article-description">$8.00</p>
-        </article>
-        <section class="interaction-options">
-          <button class="facbook-button interaction-button">Post to Facebook</button>
-          <button class="Twitter-button interaction-button">Tweet this pattern</button>
-          <button class="Pinterest-button interaction-button">Pin this pattern</button>
-          <h4>(globe here) Link to this project</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-          <div class="link-section">
-            <p>https://www.ravelry.com/patterns/library/mackworth</p>
-            <button>Copy</button>
-          </div>
-          <h4>(etsy tag here)Buy on Etsy</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-          <div class="etsy-section">
-            <p>somelink.com</p>
-            <button>Go</button>
-          </div>
-          <h4>(paperairplane here) Sign up for their newsletter</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
-          <div class="newsletter-section">
-            <p>example@example.com</p>
-          </div>
+        <section class="artist-data-container">
+          <img class="infograph" src="../Comp-Recreation/assets/circle-graphs1.png">
+          <img class="infograph" src="../Comp-Recreation/assets/step-graph.png">
         </section>
-      </section>
+        <hr>
+        <section class="more-artistinfo-container">
+          <table class="featured-pattern">
+            <tr>
+              <th>Featured Pattern</th>
+              <th>Contact</th>
+            </tr>
+            <tr>
+              <th>Pattern Name</th>
+              <th>Mackworth</th>
+            </tr>
+            <tr>
+              <th>Arist</th>
+              <th>Andrea Mowry</th>
+            </tr>
+            <tr>
+              <th>Description</th>
+              <th>This sweater was a little gift to myself last Spring. I designed it as I went and it filled me right up! I hope it fills you up too and that when you wear it, you get a big ol dose of self love! Knit from the top down seamlessly, you can try it on as you go to get the right fit for you!</th>
+            </tr>
+            <tr>
+              <th>Yarn Type</th>
+              <th>Light Fingering</th>
+            </tr>
+            <tr>
+              <th>Needle/hook size</th>
+              <th>US 5 - 3.75 mm</th>
+            </tr>
+            <tr>
+              <th>Yardage</th>
+              <th>1579 = 3488 yards (1444 - 3189 m</th>
+            </tr>
+            <tr>
+              <th>Cost</th>
+              <th>$8.00</th>
+            </tr>
+            <!-- <article class="featured-pattern">
+            <div>
+              <h3 class="header1 article-header">Featured Pattern</h3>
+              <p class="description1 article-description"></p>
+            </div> -->
+            <!-- <div>
+              <h3 class="header2 article-header">Pattern Name</h3>
+              <p class="description1 article-description">Mackworth</p>
+            </div> -->
+            <!-- <div>
+              <h3 class="header3 article-header">Author</h3>
+              <p class="description1 article-description">Andrea Mowry</p> -->
+            <!-- </div>
+            <div>
+              <h3 class="header4 article-header">Description</h3>
+              <p class="description1 article-description"></p>
+            </div> -->
+            <!-- <div>
+              <h3 class="header5 article-header">Yarn Type</h3>
+              <p class="description1 article-description">Light Fingering</p>
+            </div> -->
+            <!-- <div>
+              <h3 class="header6 article-header">Needle/hook size</h3>
+              <p class="description1 article-description">US 5 - 3.75 mm</p>
+            </div> -->
+            <!-- <div>
+              <h3 class="header7 article-header">Yardage</h3>
+              <p class="description1 article-description">1579 = 3488 yards (1444 - 3189 m</p>
+            </div> -->
+            <!-- <div
+              <h3 class="header8 article-header">Cost</h3>
+              <p class="description1 article-description">$8.00</p>
+          </article> -->
+          <section class="interaction-options">
+            <button class="facbook-button interaction-button">Post to Facebook</button>
+            <button class="Twitter-button interaction-button">Tweet this pattern</button>
+            <button class="Pinterest-button interaction-button">Pin this pattern</button>
+            <h4>(globe here) Link to this project</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="link-section">
+              <p>https://www.ravelry.com/patterns/library/mackworth</p>
+              <button>Copy</button>
+            </div>
+            <h4>(etsy tag here)Buy on Etsy</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="etsy-section">
+              <p>somelink.com</p>
+              <button>Go</button>
+            </div>
+            <h4>(paperairplane here) Sign up for their newsletter</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <div class="newsletter-section">
+              <p>example@example.com</p>
+            </div>
+          </section>
+        </section>
     </section>
     </section>
   </body>
