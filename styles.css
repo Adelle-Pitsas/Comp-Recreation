@@ -6,6 +6,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
+  max-width: fit-content;
 }
 
 /* -----Side Nav------ */
@@ -14,8 +15,8 @@ body {
   width: 150px;
   height: 100vh;
   position: fixed;
-  
   padding: 1%;
+  box-sizing: border-box;
 }
 
 .user-image {
@@ -52,7 +53,13 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  margin-left: 172px;
+  width: calc(100% - 150px);
+  left: 150px;
+  position: relative;
+  background-image: url(https://media.istockphoto.com/photos/stack-of-cozy-knitted-sweaters-on-gray-wall-background-picture-id1072036398?k=20&m=1072036398&s=612x612&w=0&h=JQ-7L1JSZ9C0F8QEd_U_m2Iql_QrUevo1CogUrYV7QM=);
+  background-size: cover;;
+  background-repeat: no-repeat;
+  background-attachment: fixed;;
 }
 
 .menu {
@@ -106,7 +113,7 @@ body {
 
 .artist-tabs label {
   padding: 10px;
-  background: #b1b1b2ea;
+  background: rgb(165, 95, 89, .10);
   cursor: pointer;
 }
 
@@ -125,24 +132,27 @@ body {
   padding-left: 30px;
 }
 
-
 .infograph {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px;
-  width: 35vw;
+  max-width: 400px;
+  position: relative;
   justify-content: flex-end;
 }
 
 .artist-data-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 
 .more-artistinfo-container {
   display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
 }
 
 /* ------table------ */
@@ -152,6 +162,9 @@ table {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
+  height: 500px;
+  width: auto;
+  position: relative;
 }
 
 tr {
@@ -160,6 +173,7 @@ tr {
 
 th {
   padding: 5px;
+  /* font-size: 12px; */
   /* border: 1px solid green; */
 }
 
@@ -169,4 +183,19 @@ th {
 
 .table-title {
   background-color: gray;
+  white-space: nowrap;
 }
+
+.interaction-options {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  position: relative;
+  margin-right: 20px;
+}
+
+button {
+  width: 35%
+}
+
+
