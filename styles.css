@@ -1,0 +1,301 @@
+
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  max-width: fit-content;
+}
+
+/* -----Side Nav------ */
+.nav-bar {
+  background-color: #3e5622;
+  width: 150px;
+  height: 100vh;
+  position: fixed;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.user-image {
+  height: 50px;
+  width: 50px;
+}
+
+.sidebar-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 4%;
+}
+
+.community-sidebar-container,
+.main-sidebar-container {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.community-sidebar,
+.main-sidebar {
+  list-style: none;
+  margin-top: 10%;
+}
+
+.user-options-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+
+/* ------top nav------ */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 150px);
+  left: 150px;
+  position: relative;
+  background-image: url(https://media.istockphoto.com/photos/stack-of-cozy-knitted-sweaters-on-gray-wall-background-picture-id1072036398?k=20&m=1072036398&s=612x612&w=0&h=JQ-7L1JSZ9C0F8QEd_U_m2Iql_QrUevo1CogUrYV7QM=);
+  background-size: cover;;
+  background-repeat: no-repeat;
+  background-attachment: fixed;;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-left,
+.menu-right {
+  display: flex;
+}
+
+.menu-icons {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  border: solid rgb(207, 207, 207) 1px;
+}
+
+.search-box {
+  height: 62px;
+  width: 70vw;
+}
+
+.checkbox {
+  position: absolute;
+}
+
+/* ------title content------ */
+.shop-title {
+  padding-left: 30px;
+}
+
+
+/* ------tabs------ */
+.artist-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.artist-tabs input[type='radio'] {
+  display: none;
+}
+
+.tabs {
+  padding: 10px;
+  background: rgb(182, 110, 101, .30);
+  cursor: pointer;
+}
+
+.tabs:hover {
+  opacity: 1;
+  transform: translate3d(0, .2em, 0);
+  background: rgb(182, 110, 101, .50);
+}
+
+.tabs::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #a44a3f;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.artist-tabs input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+.artist-tabs [type='radio']:checked + label {
+ 
+}
+
+
+/* ------bottom arist info------ */
+.artist-container {
+  background-color: #f2e9e4;
+  padding-left: 30px;
+}
+
+.infograph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  max-width: 400px;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.artist-data-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.more-artistinfo-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+
+/* ------table------ */
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 750px;
+  width: auto;
+  position: relative;
+}
+
+th {
+  padding: 5px;
+}
+
+.title-row {
+  width: 100%;
+}
+
+.table-title {
+  background-color: gray;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+.interaction-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30%;
+  position: relative;
+  margin-right: 20px;
+}
+
+h4,
+.interaction-info {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #808080;
+}
+
+h4 {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #3e3e3e;
+}
+
+.pinterest-button {
+  margin-bottom: 30px;
+}
+
+.interaction-button {
+  width: 90%;
+  border-radius: 3px;
+  margin-top: 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.facebook-button {
+  background-color: #4477de;
+}
+
+.twitter-button {
+  background-color: #1DA1F2;
+}
+
+.pinterest-button {
+  background-color: #E60023;
+
+}
+
+.link-section {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.links {
+  background-color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+  width: 90%;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.link-button {
+  height: 40px;
+  border: none;
+  background-color: #a44a3f;
+  color: white;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.inline-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.in-button-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.etsy-icon,
+.paper-airplane-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.button-content {
+  width: 100%;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CompRecreation</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta class="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <aside class="nav-bar">
+      <img class="user-image" src="../Comp-Recreation/assets/user-picture.png" alt="user's image">
+      <p class="user-name">Adelle Pitsas</p>
+      <hr>
+      <section class="main-sidebar-container">Main
+        <li class="main-sidebar projects-link"> 
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/project-icon.png">My Projects
+        </li>
+        <li class="main-sidebar favorites-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/favorites-icon.png">My Favorites
+        </li>
+        <li class="main-sidebar yarn-library-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/yarn-library-icon.png">My Yarn Library
+        </li>
+        <li class="main-sidebar tools-library-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/tools-icon.png">My Tools Library
+        </li>
+        <li class="main-sidebar planning-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/planning-icon.png">Planning
+        </li>
+      </section>
+      <hr>
+      <section class="community-sidebar-container">Community
+        <li class="community-sidebar find-user-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/users-icon.png">Find a User
+        </li>
+        <li class="community-sidebar find-pattern-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/find-pattern-icon.png">Find a Pattern
+        </li>
+        <li class="community-sidebar find-artist-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/find-artist-icon.png">Find an artist
+        </li>
+        <li class="community-sidebar post-pattern-link">
+          <img class="sidebar-icon" src="../Comp-Recreation/assets/post-icon.png">Post a Pattern
+        </li>
+      </section>
+      <hr>
+      <section class="user-options-sidebar-container">User Options
+        <input type="checkbox" id="userSideBar" class="user-sidebar checkbox" checked="checked"/>
+        <label for="userSideVar">User</label>
+        <input type="checkbox" id="adminSideBar" class="artist-admin-sidebar checkbox"/>
+        <label for="adminSideVar">Artist Admin</label>
+        <input type="checkbox" id="editorSideBar" class="editor-sidebar checkbox"/>
+        <label for="editorSideVar">Editor</label>
+        <input type="checkbox" id="sellerSideBar" class="seller-sidebar checkbox"/>
+        <label for="sellerSideVar">Seller</label>
+      </section>
+    </aside>
+    <section class="main-content">
+      <nav class="menu">
+        <div class="menu-left">
+          <li class="menu-list">
+            <img class="menu-icons" src="../Comp-Recreation/assets/menu-icon.png">
+          </li>
+          <li class="menu-list">
+            <input type="search" class="search-box" placeholder="Search for a pattern or yarn">
+          </li>
+        </div>
+        <div class="menu-right">
+          <li class="menu-list">
+            <img class="menu-icons" src="../Comp-Recreation/assets/home-icon.png">
+          </li>
+          <li class="menu-list">
+            <img class="menu-icons" src="../Comp-Recreation/assets/user-icon.png">
+          </li>
+          <li class="menu-list">
+            <img class="menu-icons" src="../Comp-Recreation/assets/interface-icon.png">
+          </li>
+        </div>
+      </nav>
+      <h1 class="shop-title">Drea Renee Knits</h1>
+      <span class="shop-title-info">
+        <img>
+        <p class="location">location</p>
+        <p class="add-to-favorites">Add to favorites</p>
+      </span>
+      <div class="artist-tabs">
+        <input
+          type="radio" id="artist-summary" name="artist-tabs" checked="checked"
+        />
+        <label class="tabs" for="artist-summary">Summary</label>
+        <input
+          type="radio" id="artist-designs" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-designs">All Designs</label>
+        <input
+          type="radio" id="artist-pattern-store" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-pattern-store">Pattern Store</label>
+        <input
+          type="radio" id="artist-activity" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-activity">Activity</label>
+        <input
+          type="radio" id="artist-about" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-about">About</label>
+        <input
+          type="radio" id="artist-contact" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-contact">Contact</label>
+        <input
+          type="radio" id="artist-archive" name="artist-tabs"
+        />
+        <label class="tabs" for="artist-archive">Archive</label>
+      </div>
+      <section class="artist-container">
+        <section class="artist-data-container">
+          <img class="infograph" src="../Comp-Recreation/assets/circle-graphs1.png">
+          <img class="infograph" src="../Comp-Recreation/assets/step-graph.png">
+        </section>
+        <hr>
+        <section class="more-artistinfo-container">
+          <table class="featured-pattern">
+            <tr>
+              <th class="table-title">Featured Pattern</th>
+              <th class="table-title"></th>
+            </tr>
+            <tr>
+              <th class="table-row1">Pattern Name</th>
+              <th class="table-row1">Mackworth</th>
+            </tr>
+            <tr>
+              <th class="table-row2">Arist</th>
+              <th class="table-row2">Andrea Mowry</th>
+            </tr>
+            <tr>
+              <th class="table-row3">Description</th>
+              <th class="table-row3">This sweater was a little gift to myself last Spring. I designed it as I went and it filled me right up! I hope it fills you up too and that when you wear it, you get a big ol dose of self love! Knit from the top down seamlessly, you can try it on as you go to get the right fit for you!</th>
+            </tr>
+            <tr>
+              <th class="table-row4">Yarn Type</th>
+              <th class="table-row4">Light Fingering</th>
+            </tr>
+            <tr>
+              <th class="table-row5">Needle/hook size</th>
+              <th class="table-row5">US 5 - 3.75 mm</th>
+            </tr>
+            <tr>
+              <th class="table-row6">Yardage</th>
+              <th class="table-row6">1579 = 3488 yards (1444 - 3189 m</th>
+            </tr>
+            <tr>
+              <th class="table-row7">Cost</th>
+              <th class="table-row7">$8.00</th>
+            </tr>
+          </table>
+          <section class="interaction-options">
+            <button class="facebook-button interaction-button"><img class="in-button-icon" src="../Comp-Recreation/assets/facebook-logo.png">
+              <p class="button-content">Post to Facebook</p>
+            </button>
+            <button class="twitter-button interaction-button">
+              <img class="in-button-icon" src="../Comp-Recreation/assets/twitter-logo.png">
+              <p class="button-content">Tweet this pattern</p>
+            </button>
+            <button class="pinterest-button interaction-button">
+              <img class="in-button-icon" src="../Comp-Recreation/assets/pinterest-logo.png">
+              <p class="button-content">Pin this pattern</p>
+            </button>
+            <h4><img class="inline-icon" src="../Comp-Recreation/assets/globe-icon.png"> Link to this project</h4>
+            <p class="interaction-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="link-section">
+              <p class="links">https://www.ravelry.com/patterns/library/mackworth</p>
+              <button class="link-button">Copy</button>
+            </div>
+            <h4><img class="inline-icon etsy-icon" src="../Comp-Recreation/assets/etsy-icon.png">Buy on Etsy</h4>
+            <p class="interaction-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="link-section">
+              <p class="links">somelink.com</p>
+              <button class="link-button">Copy</button>
+            </div>
+            <h4><img class="inline-icon paper-airplane-icon" src="../Comp-Recreation/assets/paper-airplane-icon.png">Sign up for their newsletter</h4>
+            <p class="interaction-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="link-section">
+              <p class="links">example@example.com</p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
