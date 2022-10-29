@@ -119,6 +119,7 @@ body {
 .tabs:hover {
   opacity: 1;
   transform: translate3d(0, .2em, 0);
+  background: rgb(182, 110, 101, .50);
 }
 
 .tabs::after {
@@ -177,19 +178,13 @@ table {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  height: 500px;
+  height: 750px;
   width: auto;
   position: relative;
 }
 
-tr {
-  /* border: 1px solid purple; */
-}
-
 th {
   padding: 5px;
-  /* font-size: 12px; */
-  /* border: 1px solid green; */
 }
 
 .title-row {
@@ -199,18 +194,108 @@ th {
 .table-title {
   background-color: gray;
   white-space: nowrap;
+  padding-left: 20px;
 }
 
 .interaction-options {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 30%;
   position: relative;
   margin-right: 20px;
 }
 
-button {
-  width: 35%
+h4,
+.interaction-info {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #808080;
 }
 
+h4 {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  color: #3e3e3e;
+}
 
+.pinterest-button {
+  margin-bottom: 30px;
+}
+
+.interaction-button {
+  width: 90%;
+  border-radius: 3px;
+  margin-top: 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.facebook-button {
+  background-color: #4477de;
+}
+
+.twitter-button {
+  background-color: #1DA1F2;
+}
+
+.pinterest-button {
+  background-color: #E60023;
+
+}
+
+.link-section {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.links {
+  background-color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+  width: 90%;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.link-button {
+  height: 40px;
+  border: none;
+  background-color: #a44a3f;
+  color: white;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.inline-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.in-button-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.etsy-icon,
+.paper-airplane-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.button-content {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
