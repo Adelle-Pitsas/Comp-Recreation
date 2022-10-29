@@ -1,6 +1,10 @@
-
+@font-face {
+  font-family: Yeseva;
+  src: url('assets/YesevaOne-Regular.ttf') format('truetype');
+}
 
 body {
+  font-family: Yeseva;
   display: flex;
   flex-direction: row;
   margin: 0;
