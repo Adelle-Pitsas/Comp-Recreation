@@ -21,11 +21,22 @@ body {
 .nav-bar {
   /* background-color: #3e5622; */
   background: rgb(182, 110, 101, .30);
-  width: 150px;
+  width: 200px;
   height: 100vh;
   position: fixed;
   padding: 1%;
   box-sizing: border-box;
+}
+
+.user-sidebar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 15px;
+  color: #3e3e3e;
 }
 
 .user-image {
@@ -46,6 +57,13 @@ body {
 }
 
 .community-sidebar,
+.main-sidebar,
+.checkbox {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.community-sidebar,
 .main-sidebar {
   list-style: none;
   margin-top: 10%;
@@ -57,13 +75,16 @@ body {
   margin: 2%;
 }
 
+.checkbox {
+  margin-bottom: 10px;
+}
 
 /* ------top nav------ */
 .main-content {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 150px);
-  left: 150px;
+  width: calc(100% - 200px);
+  left: 200px;
   position: relative;
 }
 
@@ -222,6 +243,8 @@ table {
 
 th {
   padding: 5px;
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 .title-row {
@@ -229,7 +252,7 @@ th {
 }
 
 .table-title {
-  background-color: gray;
+  background-color: #a44a3f;
   white-space: nowrap;
   padding-left: 20px;
 }
