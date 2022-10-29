@@ -8,10 +8,13 @@
   </head>
   <body>
     <aside class="nav-bar">
-      <img class="user-image" src="../Comp-Recreation/assets/user-picture.png" alt="user's image">
-      <p class="user-name">Adelle Pitsas</p>
-      <hr>
-      <section class="main-sidebar-container">Main
+      <div class="user-sidebar-info">
+        <img class="user-image" src="../Comp-Recreation/assets/user-picture.png" alt="user's image">
+        <p class="user-name">Adelle Pitsas</p>
+      </div>
+      <hr class="sidebar-line">
+      <section class="main-sidebar-container">
+        <h3 class="sidebar-title">MAIN</h3>
         <li class="main-sidebar projects-link"> 
           <img class="sidebar-icon" src="../Comp-Recreation/assets/project-icon.png">My Projects
         </li>
@@ -28,8 +31,9 @@
           <img class="sidebar-icon" src="../Comp-Recreation/assets/planning-icon.png">Planning
         </li>
       </section>
-      <hr>
-      <section class="community-sidebar-container">Community
+      <hr class="sidebar-line">
+      <section class="community-sidebar-container">
+        <h3 class="sidebar-title">COMMUNITY</h3>
         <li class="community-sidebar find-user-link">
           <img class="sidebar-icon" src="../Comp-Recreation/assets/users-icon.png">Find a User
         </li>
@@ -43,16 +47,25 @@
           <img class="sidebar-icon" src="../Comp-Recreation/assets/post-icon.png">Post a Pattern
         </li>
       </section>
-      <hr>
-      <section class="user-options-sidebar-container">User Options
-        <input type="checkbox" id="userSideBar" class="user-sidebar checkbox" checked="checked"/>
-        <label for="userSideVar">User</label>
-        <input type="checkbox" id="adminSideBar" class="artist-admin-sidebar checkbox"/>
-        <label for="adminSideVar">Artist Admin</label>
-        <input type="checkbox" id="editorSideBar" class="editor-sidebar checkbox"/>
-        <label for="editorSideVar">Editor</label>
-        <input type="checkbox" id="sellerSideBar" class="seller-sidebar checkbox"/>
-        <label for="sellerSideVar">Seller</label>
+      <hr class="sidebar-line">
+      <section class="user-options-sidebar-container">
+        <h3 class="sidebar-title">USER OPTIONS</h3>
+        <div class="user-option1">
+          <input type="checkbox" id="userSideBar" checked="checked"/>
+          <label for="userSideBar" class="user-sidebar checkbox">User<label>
+        </div>
+        <div>
+          <input type="checkbox" id="adminSideBar"/>
+          <label for="adminSideBar" class="artist-admin-sidebar checkbox">Artist Admin</label>
+        </div>
+        <div>
+          <input type="checkbox" id="editorSideBar"/>
+          <label for="editorSideBar" class="editor-sidebar checkbox">Editor</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sellerSideBar"/>
+          <label for="sellerSideBar" class="seller-sidebar checkbox">Seller</label>
+        </div>
       </section>
     </aside>
     <section class="main-content">
@@ -122,35 +135,35 @@
         <section class="more-artistinfo-container">
           <table class="featured-pattern">
             <tr>
-              <th class="table-title">Featured Pattern</th>
+              <th class="table-title">FEATURED PATTERN</th>
               <th class="table-title"></th>
             </tr>
             <tr>
-              <th class="table-row1">Pattern Name</th>
+              <th class="table-row1">PATTERN NAME</th>
               <th class="table-row1">Mackworth</th>
             </tr>
             <tr>
-              <th class="table-row2">Arist</th>
+              <th class="table-row2">ARTIST</th>
               <th class="table-row2">Andrea Mowry</th>
             </tr>
             <tr>
-              <th class="table-row3">Description</th>
+              <th class="table-row3">DESCRIPTION</th>
               <th class="table-row3">This sweater was a little gift to myself last Spring. I designed it as I went and it filled me right up! I hope it fills you up too and that when you wear it, you get a big ol dose of self love! Knit from the top down seamlessly, you can try it on as you go to get the right fit for you!</th>
             </tr>
             <tr>
-              <th class="table-row4">Yarn Type</th>
+              <th class="table-row4">YARN TYPE</th>
               <th class="table-row4">Light Fingering</th>
             </tr>
             <tr>
-              <th class="table-row5">Needle/hook size</th>
+              <th class="table-row5">NEEDLE/HOOK SIZE</th>
               <th class="table-row5">US 5 - 3.75 mm</th>
             </tr>
             <tr>
-              <th class="table-row6">Yardage</th>
+              <th class="table-row6">YARDAGE</th>
               <th class="table-row6">1579 = 3488 yards (1444 - 3189 m</th>
             </tr>
             <tr>
-              <th class="table-row7">Cost</th>
+              <th class="table-row7">COST</th>
               <th class="table-row7">$8.00</th>
             </tr>
           </table>
